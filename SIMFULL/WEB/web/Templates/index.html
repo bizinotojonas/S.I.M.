@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Soil Monitor</title>
+
+<script src="/static/script.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+text-align: center;
+background-color:#f2f2f2;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px auto;
+width:300px;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+button{
+padding:10px;
+margin:5px;
+font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Soil Monitoring System</h1>
+
+<div class="card">
+
+<p>Humidity: <span id="humidity">0</span>%</p>
+
+<p>N: <span id="n">0</span></p>
+
+<p>P: <span id="p">0</span></p>
+
+<p>K: <span id="k">0</span></p>
+
+</div>
+
+<div class="card">
+
+<h3>Pump Control</h3>
+
+<button onclick="pump(1)">Ligar bomba</button>
+<button onclick="pump(0)">Desligar bomba</button>
+
+</div>
+
+</body>
+</html>
